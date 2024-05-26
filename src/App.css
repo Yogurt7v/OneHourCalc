@@ -1,38 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppWrapper {
+    width: 300px;
+    margin: 50px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.display{
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.numbersWrapper{
+    display: flex;
+
+    margin-top: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.operators {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.equal{
+    width: 100%;
+    gap: 5px;
+}
+
+li {
+    list-style-type: none;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.none {
+    cursor: default;
+}
+.none:hover {
+    background-color: transparent;
+}
+
+li:hover {
+    background-color: #ccc;
+}
+
+li:active {
+    background-color: #aaa;
+}
+
+ul {
+    display: flex;
+}
+
+.equal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.equal li{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
